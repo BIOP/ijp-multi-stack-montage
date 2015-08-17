@@ -20,7 +20,8 @@
 	<target name="build">
 		<mkdir dir="bin"/>
 		<javac srcdir="src" destdir="bin" classpathref="lib.path"  source="1.6" target="1.6" deprecation="on" optimize="on" debug="on" />
-	
+		<copy toDir="bin"><fileset file="plugins.config"></fileset></copy> 
+
 	<!--	<mkdir dir="doc"/>
 		<javadoc destdir="doc" classpathref="lib.path">
             <fileset dir="src"><include name="*/*.java"/> </fileset>
