@@ -1,4 +1,4 @@
-package ch.epfl.biop;
+package ch.epfl.biop.montage;
 
 import ij.IJ;
 import ij.ImagePlus;

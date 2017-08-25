@@ -1,3 +1,4 @@
+package ch.epfl.biop.montage;
 
 
 import java.util.ArrayList;
@@ -5,7 +6,6 @@ import java.util.Arrays;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-import ch.epfl.biop.StackMontage;
 import ij.IJ;
 import ij.ImageJ;
 import ij.ImagePlus;
@@ -20,7 +20,7 @@ import ij.plugin.PlugIn;
  * PlugIn to create montages out of multiple stacks or hyperstacks.
  * Macro recordable
  * @author Olivier Burri
- * @version 1.0
+ * @version 1.1
  */
 public class Multi_Stack_Montage implements PlugIn {
 
@@ -126,7 +126,7 @@ public class Multi_Stack_Montage implements PlugIn {
 		// Number of rows and columns
 		gd.addNumericField("Rows", nRows, 0);
 		gd.addNumericField("Columns", nCols, 0);
-		
+		gd.setResizable(true);
 		// Display
 		gd.showDialog();
 		if (gd.wasCanceled())
@@ -163,7 +163,8 @@ public class Multi_Stack_Montage implements PlugIn {
 		System.setProperty("plugins.dir", pluginsDir);
 
 		// start ImageJ
-		new ImageJ();
+		ImageJ ij = new ImageJ();
+		ij.exitWhenQuitting(true);
 
 		// Make some nice images
 		ImagePlus imp = IJ.openImage("http://imagej.nih.gov/ij/images/confocal-series.zip");
