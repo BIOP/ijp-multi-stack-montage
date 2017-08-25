@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<parent>
+		<groupId>org.scijava</groupId>
+		<artifactId>pom-scijava</artifactId>
+		<version>16.1.0</version>
+		<relativePath />
+	</parent>
+
+	<groupId>ch.epfl.biop.montage</groupId>
+	<version>1.1.0-SNAPSHOT</version>
+
+	<name>Multi_Stack_Montage</name>
+	<url>http://imagej.net/Multi_Stack_Montage</url>
+	<inceptionYear>2009</inceptionYear>
+	<organization>
+		<name>BioImaging And Optics Platform (BIOP)</name>
+		<url>http://biop.epfl.ch</url>
+	</organization>
+	<licenses>
+		<license>
+			<name>GNU General Public License v3+</name>
+			<url>http://www.gnu.org/licenses/gpl.html</url>
+			<distribution>repo</distribution>
+		</license>
+	</licenses>
+
+	<developers>
+		<developer>
+			<id>oburri</id>
+			<name>Olivier Burri</name>
+			<url>http://biop.epfl.ch/INFO_Facility.html#staff</url>
+			<roles>
+				<role>developer</role>
+				<role>debugger</role>
+				<role>reviewer</role>
+				<role>support</role>
+			</roles>
+		</developer>
+		<developer>
+			<id>guiet</id>
+			<name>Romain Guiet</name>
+			<url>http://biop.epfl.ch/INFO_Facility.html#staff</url>
+			<roles>
+				<role>reviewer</role>
+				<role>support</role>
+			</roles>
+		</developer>
+	</developers>
+	<contributors>
+		<contributor>
+			<name>Olaf Selchow</name>
+			<url>http://biop.epfl.ch/INFO_Facility.html#staff</url>
+			<roles><role>reviewer</role></roles>
+			<properties><id>OlafSelchow</id></properties>
+		</contributor>
+	</contributors>
+
+	<mailingLists>
+		<mailingList>
+			<name>ImageJ Forum</name>
+			<archive>http://forum.imagej.net/</archive>
+		</mailingList>
+	</mailingLists>
+
+	<scm>
+		<connection>scm:git:git://c4science.ch/source/ijp-multi-stack-montage.git</connection>
+		<developerConnection>scm:git://c4science.ch/source/ijp-multi-stack-montage.git</developerConnection>
+		<tag>HEAD</tag>
+		<url>https://c4science.ch/source/ijp-multi-stack-montage.git</url>
+	</scm>
+	<issueManagement>
+		<system>none</system>
+		<url>https://google.com</url>
+	</issueManagement>
+	<ciManagement>
+		<system>none</system>
+		<url>https://google.com</url>
+	</ciManagement>
+
+	<properties>
+		<license.licenseName>gpl_v3</license.licenseName>
+		<license.copyrightOwners>Olivier Burri, BIOP</license.copyrightOwners>
+		<imagej.app.directory>C:/Fiji/</imagej.app.directory>
+		<delete.other.versions>true</delete.other.versions>
+		<imagej.app.subdirectory>plugins/BIOP</imagej.app.subdirectory>
+	</properties>
+
+	<repositories>
+		<repository>
+			<id>imagej.public</id>
+			<url>http://maven.imagej.net/content/groups/public</url>
+		</repository>
+	</repositories>
+
+	<dependencies>
+		<!-- Fiji dependencies -->
+
+		<!-- ImageJ dependencies -->
+
+		<!-- ImgLib2 dependencies -->
+		<dependency>
+			<groupId>net.imglib2</groupId>
+			<artifactId>imglib2-ij</artifactId>
+		</dependency>
+
+		<!-- Third party dependencies -->
+	</dependencies>
+	<artifactId>Multi_Stack_Montage</artifactId>
+	<description>This plugin brings a bit more functionality that was not available using the Make Montage... Plugin, namely making montages out of multiple stacks and hyperstacks.</description>
+</project>
