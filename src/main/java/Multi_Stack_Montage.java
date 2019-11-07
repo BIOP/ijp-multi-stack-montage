@@ -1,11 +1,9 @@
-package ch.epfl.biop.montage;
-
-
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
+import ch.epfl.biop.montage.StackMontage;
 import ij.IJ;
 import ij.ImageJ;
 import ij.ImagePlus;
@@ -64,7 +62,12 @@ public class Multi_Stack_Montage implements PlugIn {
 		// Get all Active Images
 		imagenames = new ArrayList<String>(Arrays.asList(WindowManager.getImageTitles()));
 		imagenames.add("*None*");
-		
+
+		if( imagenames.size() == 1 ) {
+			IJ.error( "No images are open. Exiting" );
+			return;
+		}
+
 		// Run the montage with the defined options.
 		if (showDialog()) {
 			ImagePlus res = StackMontage.montageImages(imagestoprocess, nRows, nCols);
