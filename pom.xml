@@ -10,7 +10,7 @@
 	</parent>
 
 	<groupId>ch.epfl.biop.montage</groupId>
-	<version>1.1.1-SNAPSHOT</version>
+	<version>1.1.1</version>
 	<artifactId>Multi_Stack_Montage</artifactId>
 	<description>This plugin brings a bit more functionality that was not available using the Make Montage... Plugin, namely making montages out of multiple stacks and hyperstacks.</description>
 
@@ -71,7 +71,7 @@
 		<connection>scm:git:https://github.com/BIOP/ijp-multi-stack-montage</connection>
 		<developerConnection>scm:git:git@github.com:BIOP/ijp-multi-stack-montage</developerConnection>
 		<url>https://github.com/BIOP/ijp-multi-stack-montage</url>
-		<tag>HEAD</tag>
+		<tag>Multi_Stack_Montage-1.1.1</tag>
 	</scm>
 	<issueManagement>
 		<system>GitHub Issues</system>
