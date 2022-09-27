@@ -86,7 +86,7 @@
 	<properties>
 		<license.licenseName>gpl_v3</license.licenseName>
 		<license.copyrightOwners>Olivier Burri, BIOP</license.copyrightOwners>
-		<scijava.app.directory>C:/Fiji/</scijava.app.directory>
+		<!--<scijava.app.directory>C:/Fiji/</scijava.app.directory>-->
 		<scijava.deleteOtherVersions>true</scijava.deleteOtherVersions>
 		<!--<scijava.app.subdirectory>plugins/BIOP</scijava.app.subdirectory>-->
 		<license.licenseName>gpl_v3</license.licenseName>
