@@ -5,12 +5,12 @@
 	<parent>
 		<groupId>org.scijava</groupId>
 		<artifactId>pom-scijava</artifactId>
-		<version>27.0.1</version>
+		<version>33.2.0</version>
 		<relativePath />
 	</parent>
 
 	<groupId>ch.epfl.biop.montage</groupId>
-	<version>1.1.0</version>
+	<version>1.1.1-SNAPSHOT</version>
 	<artifactId>Multi_Stack_Montage</artifactId>
 	<description>This plugin brings a bit more functionality that was not available using the Make Montage... Plugin, namely making montages out of multiple stacks and hyperstacks.</description>
 
@@ -63,20 +63,21 @@
 	<mailingLists>
 		<mailingList>
 			<name>ImageJ Forum</name>
-			<archive>http://forum.imagej.net/</archive>
+			<archive>https://forum.image.sc/</archive>
 		</mailingList>
 	</mailingLists>
 
 	<scm>
-		<connection>scm:git:git://c4science.ch/source/ijp-multi-stack-montage.git</connection>
-		<developerConnection>scm:git://c4science.ch/source/ijp-multi-stack-montage.git</developerConnection>
+		<connection>scm:git:https://github.com/BIOP/ijp-multi-stack-montage</connection>
+		<developerConnection>scm:git:git@github.com:BIOP/ijp-multi-stack-montage</developerConnection>
+		<url>https://github.com/BIOP/ijp-multi-stack-montage</url>
 		<tag>HEAD</tag>
-		<url>https://c4science.ch/source/ijp-multi-stack-montage.git</url>
 	</scm>
 	<issueManagement>
-		<system>none</system>
-		<url>https://google.com</url>
+		<system>GitHub Issues</system>
+		<url>https://github.com/BIOP/ijp-multi-stack-montage/issues</url>
 	</issueManagement>
+
 	<ciManagement>
 		<system>none</system>
 		<url>https://google.com</url>
@@ -87,7 +88,7 @@
 		<license.copyrightOwners>Olivier Burri, BIOP</license.copyrightOwners>
 		<scijava.app.directory>C:/Fiji/</scijava.app.directory>
 		<scijava.deleteOtherVersions>true</scijava.deleteOtherVersions>
-		<scijava.app.subdirectory>plugins/BIOP</scijava.app.subdirectory>
+		<!--<scijava.app.subdirectory>plugins/BIOP</scijava.app.subdirectory>-->
 		<license.licenseName>gpl_v3</license.licenseName>
 		<main-class>Multi_Stack_Montage</main-class>
 		<package-name>ch.epfl.biop.montage</package-name>
@@ -96,8 +97,8 @@
 
 	<repositories>
 		<repository>
-			<id>imagej.public</id>
-			<url>http://maven.imagej.net/content/groups/public</url>
+			<id>scijava.public</id>
+			<url>https://maven.scijava.org/content/groups/public</url>
 		</repository>
 	</repositories>
 
