@@ -93,6 +93,9 @@
 		<main-class>Multi_Stack_Montage</main-class>
 		<package-name>ch.epfl.biop.montage</package-name>
 		<license.copyrightOwners>BIOP</license.copyrightOwners>
+
+		<!-- NB: Deploy releases to the SciJava Maven repository. -->
+		<releaseProfiles>sign,deploy-to-scijava</releaseProfiles>
 	</properties>
 
 	<repositories>
