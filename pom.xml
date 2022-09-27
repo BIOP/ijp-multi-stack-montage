@@ -79,8 +79,8 @@
 	</issueManagement>
 
 	<ciManagement>
-		<system>none</system>
-		<url>https://google.com</url>
+		<system>GitHub Actions</system>
+		<url>https://github.com/BIOP/ijp-multi-stack-montage/actions</url>
 	</ciManagement>
 
 	<properties>
