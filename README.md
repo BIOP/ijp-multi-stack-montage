@@ -1,3 +1,5 @@
+[![Build Status](https://github.com/BIOP/ijp-multi-stack-montage/actions/workflows/build.yml/badge.svg)](https://github.com/BIOP/ijp-multi-stack-montage/actions/workflows/build.yml)
+
 # multi-stack-montage
 An ImageJ1 plugin for making montages out of stacks
 
